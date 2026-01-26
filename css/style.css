@@ -5,10 +5,12 @@
     /* Paleta de colors extreta del logo */
     --color-primary: #5d8492;
     /* Blau Muntanya */
-    --color-secondary: #ea7e4b;
-    /* Taronja Sol (Accent) */
-    --color-accent: #8fa87a;
+    --color-secondary: #8fa87a;
     /* Verd Vall */
+    --color-secondary-dark: #758a62;
+    /* Verd Vall Fosc (Hover) */
+    --color-accent: #e07a5f;
+    /* Taronja Sol (Accent) */
     --color-text: #4a4a4a;
     /* Gris Carbó Logo */
     --color-bg: #fdfcf0;
@@ -150,7 +152,7 @@ nav ul li a:hover::after {
 
 .btn:hover {
     transform: translateY(-5px);
-    background: #c35a41;
+    background: var(--color-secondary-dark);
 }
 
 /* Destinations Section */
@@ -248,6 +250,66 @@ footer {
     padding-top: 2rem;
     text-align: center;
     font-size: 0.9rem;
+}
+
+/* Colors reals de les icones */
+
+/* WhatsApp: Verd oficial */
+.fa-whatsapp {
+    color: #25D366 !important;
+}
+
+/* Telèfon: Normalment es representa amb un verd de trucada o blau estàndard */
+.fa-phone {
+    color: #34b7f1 !important;
+    /* Blau de comunicacions */
+}
+
+/* Email: Vermell Google/Gmail o un gris metàl·lic */
+.fa-envelope {
+    color: #EA4335 !important;
+    /* Vermell Gmail */
+}
+
+/* Ajust addicional per a la línia de contacte */
+.footer-links p {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 1rem;
+}
+
+.footer-links i {
+    font-size: 1.3rem;
+    /* Una mica més gran per ressaltar els colors */
+    width: 25px;
+    text-align: center;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+    /* Dona una mica de relleu */
+}
+
+/* Estil per fer que tota la card sigui clicable sense subratllats */
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Botó petit per a la vista de llista */
+.btn-small {
+    display: inline-block;
+    margin-top: 1rem;
+    color: var(--color-secondary);
+    font-weight: 800;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--color-secondary);
+}
+
+/* Millora de la grid per a la pàgina de destins */
+.destinations {
+    min-height: 70vh;
+    /* Perquè el footer no pugi massa si hi ha pocs destins */
 }
 
 /* Responsivitat */
