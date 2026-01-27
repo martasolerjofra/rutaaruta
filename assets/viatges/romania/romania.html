@@ -52,15 +52,15 @@
                 </ul>
 
                 <h3 style="margin: 2rem 0 1rem; color: var(--color-primary);">Galeria d'imatges</h3>
-                <div
-                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin-bottom: 2rem;">
-                    <img src="imatges/romania1.jpg" alt="Romania 1"
-                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; box-shadow: var(--shadow-soft);">
-                    <img src="imatges/romania2.jpg" alt="Romania 2"
-                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; box-shadow: var(--shadow-soft);">
-                    <img src="https://images.unsplash.com/photo-1596422846001-4be3a3962638?auto=format&fit=crop&q=80&w=800"
-                        alt="Romania 3"
-                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 10px; box-shadow: var(--shadow-soft);">
+                <div class="gallery-carousel">
+                    <button class="carousel-btn prev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+                    <div class="carousel-container">
+                        <div class="carousel-item"><img src="imatges/romania1.jpg" alt="Romania 1"></div>
+                        <div class="carousel-item"><img src="imatges/romania2.jpg" alt="Romania 2"></div>
+                        <div class="carousel-item"><img src="imatges/romania3.jpg" alt="Romania 3"></div>
+                        <div class="carousel-item"><img src="imatges/romania4.jpg" alt="Romania 4"></div>
+                    </div>
+                    <button class="carousel-btn next" aria-label="Següent"><i class="fas fa-chevron-right"></i></button>
                 </div>
 
                 <div
@@ -73,7 +73,7 @@
                 </div>
 
                 <div style="text-align: center;">
-                    <a href="../../../index.html#contacte" class="btn">Vull més informació per anar amb el meu grup</a>
+                    <a href="../../../index.html#contacte" class="btn">PLanifica el teu viatge a Romania</a>
                 </div>
             </div>
         </section>

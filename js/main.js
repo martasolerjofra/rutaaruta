@@ -75,4 +75,25 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
     });
+
+    // Carousel Logic
+    const initCarousels = () => {
+        const carousels = document.querySelectorAll('.gallery-carousel');
+        carousels.forEach(carousel => {
+            const container = carousel.querySelector('.carousel-container');
+            const prevBtn = carousel.querySelector('.carousel-btn.prev');
+            const nextBtn = carousel.querySelector('.carousel-btn.next');
+
+            if (prevBtn && nextBtn && container) {
+                prevBtn.addEventListener('click', () => {
+                    container.scrollLeft -= container.offsetWidth;
+                });
+                nextBtn.addEventListener('click', () => {
+                    container.scrollLeft += container.offsetWidth;
+                });
+            }
+        });
+    };
+
+    initCarousels();
 });

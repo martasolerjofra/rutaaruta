@@ -348,3 +348,96 @@ footer {
 
     /* Per simplicitat aquí, en una web real fariem un menú hamburguesa */
 }
+
+/* Carousel Styles */
+.gallery-carousel {
+    position: relative;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+.carousel-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 1.5rem;
+    padding: 1rem 0;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* IE/Edge */
+    scroll-behavior: smooth;
+}
+
+.carousel-container::-webkit-scrollbar {
+    display: none;
+    /* Chrome/Safari */
+}
+
+.carousel-item {
+    flex: 0 0 100%;
+    /* Show one image at a time by default */
+    scroll-snap-align: start;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-soft);
+    aspect-ratio: 16 / 9;
+}
+
+@media (min-width: 768px) {
+    .carousel-item {
+        flex: 0 0 calc(50% - 0.75rem);
+        /* Show two images on desktop */
+    }
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition-smooth);
+}
+
+.carousel-item:hover img {
+    transform: scale(1.05);
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    z-index: 10;
+    color: var(--color-primary);
+    transition: var(--transition-smooth);
+}
+
+.carousel-btn:hover {
+    background: var(--color-secondary);
+    color: white;
+}
+
+.carousel-btn.prev {
+    left: -22px;
+}
+
+.carousel-btn.next {
+    right: -22px;
+}
+
+@media (max-width: 1024px) {
+    .carousel-btn {
+        display: none;
+    }
+
+    /* Hide buttons on mobile/tablet */
+}
