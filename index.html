@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruta a Ruta - Viatges de Muntanya | Aventures Personalitzades</title>
     <meta name="description"
-        content="Agència de viatges de muntanya amb destinacions exclusives i grups tancats. Descobreix els Pirineus, Dolomites i molt més.">
+        content="Agència de viatges de muntanya amb destinacions exclusives. Descobreix els Pirineus, Dolomites i molt més.">
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <script src="js/main.js" defer></script>
@@ -23,23 +23,23 @@
         <section id="inici" class="hero">
             <h1>Descobreix món Ruta a Ruta</h1>
             <p>Viatges personalitzats per a grups.Connecta amb la natura de la mà d'experts.</p>
-            <a href="#destins" class="btn">Veure Destinacions</a>
+            <a href="destins.html" class="btn">Veure Destinacions</a>
         </section>
 
         <!-- Secció Destins -->
         <section id="destins" class="destinations">
             <div class="section-title">
                 <h2>Destins més destacats</h2>
-                <p style="max-width: 600px; margin: 1rem auto; color: #666;">Seleccionem els racons més impressionants
+                <p style="max-width: 600px; margin: 0.5rem auto 0; color: #666;">Seleccionem els racons més
+                    impressionants
                     perquè la teva experiència sigui inoblidable.</p>
             </div>
 
             <div class="grid">
                 <!-- Viatge 1 -->
-                <a href="assets\viatges\romania\romania.html"
-                    style="text-decoration: none; color: inherit; display: block;">
+                <a href="assets/viatges/romania/romania.html" class="card-link">
                     <article class="card">
-                        <img src="assets\viatges\romania\imatges\romania1.jpg" alt="Carpats - Romania" class="card-img">
+                        <img src="assets/viatges/romania/imatges/romania1.jpg" alt="Carpats - Romania" class="card-img">
                         <div class="card-content">
                             <span class="tag">Natura Salvatge</span>
                             <h3>Romania: Descobrint els Carpats</h3>
@@ -53,8 +53,7 @@
                 </a>
 
                 <!-- Viatge 2 -->
-                <a href="assets/viatges/dolomites/dolomites.html"
-                    style="text-decoration: none; color: inherit; display: block;">
+                <a href="assets/viatges/dolomites/dolomites.html" class="card-link">
                     <article class="card">
                         <img src="assets/viatges/dolomites/imatges/dolomites1.jpg" alt="Dolomites" class="card-img">
                         <div class="card-content">
@@ -70,8 +69,7 @@
                 </a>
 
                 <!-- Viatge 3 -->
-                <a href="assets\viatges\eslovaquia/eslovaquia.html"
-                    style="text-decoration: none; color: inherit; display: block;">
+                <a href="assets/viatges/eslovaquia/eslovaquia.html" class="card-link">
                     <article class="card">
                         <img src="assets/viatges/eslovaquia/imatges/eslovaquia1.jpg" alt="Eslovàquia" class="card-img">
                         <div class="card-content">
@@ -88,23 +86,39 @@
         </section>
 
         <!-- Secció Proposta de Valor -->
-        <section id="nosaltres" style="padding: 5rem 5%; background: #ffffff;">
-            <div style="display: flex; align-items: center; gap: 4rem; flex-wrap: wrap;">
-                <div style="flex: 1; min-width: 300px;">
+        <section id="nosaltres" style="padding: 5rem 5%; background: var(--color-white);">
+            <div
+                style="display: flex; align-items: center; gap: 4rem; flex-wrap: wrap; max-width: 1100px; margin: 0 auto;">
+                <div style="flex: 1; min-width: 280px; max-width: 400px;">
                     <img src="assets/images/nosaltres1.jpg" alt="Muntanyenc"
-                        style="width: 100%; border-radius: 30px; box-shadow: var(--shadow-soft);">
+                        style="width: 100%; border-radius: 20px; box-shadow: var(--shadow-soft);">
                 </div>
                 <div style="flex: 1.2; min-width: 300px;">
-                    <h2 style="font-size: 2.8rem; margin: 1rem 0;">Busques un viatge a mida?</h2>
-                    <p style="font-size: 1.2rem; color: #555; margin-bottom: 2rem;">A Ruta a Ruta no fem turisme de
+                    <h2 style="font-size: 2.2rem; margin-bottom: 1rem; color: var(--color-primary);">Busques un viatge a
+                        mida?</h2>
+                    <p style="font-size: 1.1rem; color: #555; margin-bottom: 1.5rem;">A Ruta a Ruta no fem turisme de
                         masses. Som una agència especialitzada en <strong>viatges personalitzats.</strong>
                     </p>
-                    <ul style="list-style: none; font-size: 1.1rem; margin-bottom: 2rem;">
-                        <li style="margin-bottom: 1rem;">✅ Itineraris dissenyats segons el teu ritme.</li>
-                        <li style="margin-bottom: 1rem;">✅ Acompanyament de guies experts.</li>
-                        <li style="margin-bottom: 1rem;">✅ Gestió completa de logística i allotjaments.</li>
+                    <ul class="value-list"
+                        style="list-style: none; font-size: 1.1rem; margin-bottom: 2.5rem; padding-left: 0;">
+                        <li style="margin-bottom: 0.8rem; display: flex; align-items: center; gap: 12px;">
+                            <span
+                                style="width: 8px; height: 8px; background: var(--color-secondary); border-radius: 50%; display: inline-block;"></span>
+                            Itineraris dissenyats segons el teu ritme.
+                        </li>
+                        <li style="margin-bottom: 0.8rem; display: flex; align-items: center; gap: 12px;">
+                            <span
+                                style="width: 8px; height: 8px; background: var(--color-secondary); border-radius: 50%; display: inline-block;"></span>
+                            Acompanyament de guies experts.
+                        </li>
+                        <li style="margin-bottom: 0.8rem; display: flex; align-items: center; gap: 12px;">
+                            <span
+                                style="width: 8px; height: 8px; background: var(--color-secondary); border-radius: 50%; display: inline-block;"></span>
+                            Gestió completa de logística i allotjaments.
+                        </li>
                     </ul>
-                    <a href="#contacte" class="btn">Parlem del teu proper destí</a>
+                    <a href="#contacte" class="btn" style="padding: 0.8rem 2rem; font-size: 1.1rem;">Parlem del teu
+                        proper destí</a>
                 </div>
             </div>
         </section>
