@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ca">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte - Ruta a Ruta</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js" defer></script>
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section class="contact-section">
+            <div class="contact-grid">
+                <!-- Informació de Contacte -->
+                <div class="contact-info">
+                    <h2>Planifica la teva propera aventura</h2>
+                    <p class="lead">Tens una idea per al teu proper viatge? Vols personalitzar una de les nostres rutes?
+                        Explica'ns el teu projecte i et donarem una solució a mida.</p>
+
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="info-text">
+                            <h4>Truca'ns</h4>
+                            <p>+34 692 047 449</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <div class="info-text">
+                            <h4>WhatsApp</h4>
+                            <p>+34 692 047 449</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="info-text">
+                            <h4>Email de contacte</h4>
+                            <p>info@rutaruta.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulari de Contacte -->
+                <div class="contact-form-container">
+                    <form action="https://formspree.io/f/mqeqwbbp" method="POST">
+                        <div class="form-group">
+                            <label for="name">Nom o Empresa</label>
+                            <input type="text" id="name" name="name" placeholder="El vostre nom complet" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Correu Electrònic</label>
+                            <input type="email" id="email" name="email" placeholder="exemple@correu.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Destí o Servei Requerit</label>
+                            <select id="service" name="service">
+                                <option value="personalitzat">Viatge 100% Personalitzat</option>
+                                <option value="romania">Aventura a Romania</option>
+                                <option value="dolomites">Expedició Dolomites</option>
+                                <option value="eslovaquia">Ruta per Eslovàquia</option>
+                                <option value="altres">Altres destins</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Detalls del Projecte</label>
+                            <textarea id="message" name="message" rows="5"
+                                placeholder="Explica'ns breument quants sou, quines dates teniu pensades i quin tipus de ruta us agradaria fer..."
+                                required></textarea>
+                        </div>
+
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="privacy" name="privacy" required>
+                            <label for="privacy">Accepto la política de privacitat i el tractament de les dades per a la
+                                gestió del pressupost.</label>
+                        </div>
+
+                        <button type="submit" class="btn-submit">Sol·licitar Proposta Personalitzada</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="footer-placeholder"></div>
+</body>
+
+</html>
