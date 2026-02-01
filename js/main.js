@@ -96,4 +96,29 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     initCarousels();
+
+    // Lògica per mostrar més destins
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    const extraDestinations = document.querySelectorAll('.extra-destination');
+
+    if (loadMoreBtn) {
+        loadMoreBtn.addEventListener('click', () => {
+            const isHidden = extraDestinations[0].style.display === 'none' || extraDestinations[0].style.display === '';
+
+            if (isHidden) {
+                extraDestinations.forEach(dest => {
+                    dest.style.display = 'block';
+                    dest.style.animation = 'fadeIn 0.5s ease forwards';
+                });
+                loadMoreBtn.textContent = 'Veure\'n menys';
+            } else {
+                extraDestinations.forEach(dest => {
+                    dest.style.display = 'none';
+                });
+                loadMoreBtn.textContent = 'Veure tots els destins';
+                // Tornem a fer scroll cap a la secció per no quedar-nos a baix de tot
+                document.getElementById('destins').scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    }
 });
