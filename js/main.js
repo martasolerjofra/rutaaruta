@@ -142,4 +142,43 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         }
     });
+
+    // Mobile Menu Toggle
+    const initMobileMenu = () => {
+        const toggle = document.querySelector('.mobile-toggle');
+        const menu = document.querySelector('.nav-menu');
+        const menuLinks = document.querySelectorAll('.nav-menu a');
+
+        if (toggle && menu) {
+            toggle.addEventListener('click', () => {
+                menu.classList.toggle('active');
+                const icon = toggle.querySelector('i');
+                if (menu.classList.contains('active')) {
+                    icon.classList.remove('fa-bars');
+                    icon.classList.add('fa-times');
+                } else {
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                }
+            });
+
+            // Tanquem el menú quan cliquem un enllaç
+            menuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.remove('active');
+                    const icon = toggle.querySelector('i');
+                    icon.classList.remove('fa-times');
+                    icon.classList.add('fa-bars');
+                });
+            });
+        }
+    };
+
+    // Com que el header es carrega dinàmicament, hem d'esperar que estigui llest
+    const checkHeader = setInterval(() => {
+        if (document.querySelector('.mobile-toggle')) {
+            initMobileMenu();
+            clearInterval(checkHeader);
+        }
+    }, 100);
 });

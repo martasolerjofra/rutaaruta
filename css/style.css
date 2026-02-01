@@ -98,10 +98,24 @@ header {
     color: var(--color-secondary);
 }
 
-nav ul {
+.mobile-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--color-primary);
+    font-size: 1.8rem;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+.nav-menu ul {
     display: flex;
     list-style: none;
     gap: 2.5rem;
+}
+
+.call-btn-mobile {
+    display: none;
 }
 
 nav ul li a {
@@ -123,6 +137,10 @@ nav ul li a::after {
 
 nav ul li a:hover::after {
     width: 100%;
+}
+
+.header-call-btn {
+    display: block;
 }
 
 /* Hero Section */
@@ -354,17 +372,123 @@ footer {
     /* Perquè el footer no pugi massa si hi ha pocs destins */
 }
 
-/* Responsivitat */
+/* Responsivitat Global */
+@media (max-width: 968px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
 @media (max-width: 768px) {
-    .hero h1 {
-        font-size: 2.5rem;
+    header {
+        padding: 0.5rem 5%;
     }
 
-    nav ul {
+    .mobile-toggle {
+        display: block;
+    }
+
+    .header-call-btn {
         display: none;
     }
 
-    /* Per simplicitat aquí, en una web real fariem un menú hamburguesa */
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        height: 100vh;
+        background: var(--color-white);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        transition: var(--transition-smooth);
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.1);
+        z-index: 1050;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        width: 100%;
+    }
+
+    .nav-menu ul li a {
+        font-size: 1.5rem;
+    }
+
+    .call-btn-mobile {
+        display: inline-block;
+        margin-top: 1rem;
+    }
+
+    /* Hero Responsive */
+    .hero {
+        height: 70vh;
+        padding-top: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    /* Grids Responsive */
+    .grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .card-img {
+        height: 250px;
+    }
+
+    .section-title h2,
+    main section h2 {
+        font-size: 2rem !important;
+    }
+
+    .carousel-btn {
+        width: 35px;
+        height: 35px;
+        font-size: 0.9rem;
+    }
+
+    .carousel-btn.prev {
+        left: 5px;
+    }
+
+    .carousel-btn.next {
+        right: 5px;
+    }
+
+    /* Section Spacing */
+    section {
+        padding: 3rem 5% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn {
+        padding: 0.8rem 1.8rem;
+        font-size: 1rem;
+    }
 }
 
 /* Carousel Styles */
