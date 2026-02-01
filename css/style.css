@@ -31,6 +31,18 @@
     --transition-smooth: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -148,12 +160,14 @@ nav ul li a:hover::after {
     font-weight: 800;
     font-size: 1.2rem;
     box-shadow: 0 4px 15px rgba(224, 122, 95, 0.4);
+    border: none;
     cursor: pointer;
 }
 
 .btn:hover {
     transform: translateY(-5px);
     background: var(--color-secondary-dark);
+    box-shadow: 0 8px 25px rgba(224, 122, 95, 0.6);
 }
 
 /* Destinations Section */
@@ -406,40 +420,54 @@ footer {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: white;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(5px);
     border: none;
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     z-index: 10;
     color: var(--color-primary);
     transition: var(--transition-smooth);
+    font-size: 1.2rem;
 }
 
 .carousel-btn:hover {
     background: var(--color-secondary);
     color: white;
+    transform: translateY(-50%) scale(1.1);
+    box-shadow: 0 12px 25px rgba(143, 168, 122, 0.3);
 }
 
 .carousel-btn.prev {
-    left: -22px;
+    left: -25px;
 }
 
 .carousel-btn.next {
-    right: -22px;
+    right: -25px;
 }
 
-@media (max-width: 1024px) {
-    .carousel-btn {
-        display: none;
+@media (max-width: 1100px) {
+    .carousel-btn.prev {
+        left: 10px;
     }
 
-    /* Hide buttons on mobile/tablet */
+    .carousel-btn.next {
+        right: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .carousel-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
 }
 
 /* Contact Page Styles */
