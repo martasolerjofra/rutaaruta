@@ -41,7 +41,7 @@ async function loadComponent(elementId, filePath) {
                     if (!isHomePage) {
                         a.href = basePath + 'index.html' + href;
                     }
-                } else if (!href.startsWith('http') && !href.startsWith('/') && !href.startsWith('mailto:')) {
+                } else if (!href.startsWith('http') && !href.startsWith('/') && !href.startsWith('mailto:') && !href.startsWith('tel:')) {
                     // Rutes relatives (ex: 'Assets/...')
                     a.href = basePath + href;
                 }
