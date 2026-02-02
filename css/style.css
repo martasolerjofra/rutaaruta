@@ -390,14 +390,14 @@ footer {
     }
 
     .header-call-btn {
-        display: none;
+        display: none !important;
     }
 
     .nav-menu {
         position: fixed;
         top: 0;
         right: -100%;
-        width: 80%;
+        width: 100%;
         height: 100vh;
         background: var(--color-white);
         display: flex;
@@ -417,53 +417,69 @@ footer {
     .nav-menu ul {
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
+        gap: 2.5rem;
         width: 100%;
     }
 
     .nav-menu ul li a {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .call-btn-mobile {
-        display: inline-block;
-        margin-top: 1rem;
+        display: flex !important;
+        align-items: center;
+        gap: 10px;
+        margin-top: 2rem;
+        background: var(--color-primary);
     }
 
     /* Hero Responsive */
     .hero {
-        height: 70vh;
-        padding-top: 2rem;
+        height: auto;
+        min-height: 60vh;
+        padding: 6rem 5% 4rem !important;
     }
 
     .hero h1 {
         font-size: 2.2rem;
         line-height: 1.2;
+        margin-bottom: 1rem;
     }
 
     .hero p {
         font-size: 1.1rem;
+        margin-bottom: 2rem;
+        line-height: 1.4;
     }
 
     /* Grids Responsive */
     .grid {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 2rem;
     }
 
     .card-img {
-        height: 250px;
+        height: 220px;
+    }
+
+    .section-title {
+        margin-bottom: 2rem;
     }
 
     .section-title h2,
     main section h2 {
-        font-size: 2rem !important;
+        font-size: 1.8rem !important;
+        line-height: 1.2;
+    }
+
+    .section-title p {
+        font-size: 1rem !important;
     }
 
     .carousel-btn {
-        width: 35px;
-        height: 35px;
-        font-size: 0.9rem;
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
     }
 
     .carousel-btn.prev {
@@ -476,7 +492,7 @@ footer {
 
     /* Section Spacing */
     section {
-        padding: 3rem 5% !important;
+        padding: 4rem 5% !important;
     }
 }
 
@@ -485,9 +501,31 @@ footer {
         font-size: 1.8rem;
     }
 
-    .btn {
-        padding: 0.8rem 1.8rem;
+    .hero p {
         font-size: 1rem;
+    }
+
+    .btn {
+        padding: 1rem 2rem;
+        font-size: 1.1rem;
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .card-content {
+        padding: 1.2rem;
+    }
+
+    .card-content h3 {
+        font-size: 1.3rem;
+        min-height: auto;
+        margin-bottom: 0.5rem;
+    }
+
+    .card-content p {
+        font-size: 0.95rem;
+        margin-bottom: 1.2rem;
     }
 }
 
@@ -837,5 +875,62 @@ footer {
 
     .faq-answer {
         padding: 0 1.5rem;
+    }
+}
+
+/* Blog & Article Styles */
+.lead {
+    font-size: 1.25rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+article ul,
+article ol {
+    margin-bottom: 2rem;
+    padding-left: 1.5rem;
+}
+
+article li {
+    margin-bottom: 0.5rem;
+}
+
+article h2 {
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.article-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 3rem 0;
+}
+
+.article-gallery figure {
+    margin: 0;
+}
+
+.article-gallery img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: var(--shadow-soft);
+}
+
+.article-gallery figcaption {
+    font-size: 0.85rem;
+    color: #777;
+    font-style: italic;
+    margin-top: 0.8rem;
+    text-align: center;
+    line-height: 1.4;
+}
+
+@media (max-width: 480px) {
+    .article-gallery img {
+        height: 200px;
     }
 }
