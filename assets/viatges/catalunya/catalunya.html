@@ -2,6 +2,8 @@
 <html lang="ca">
 
 <head>
+    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="204dd492-d62e-4860-b512-eb8933e6c78b"
+        data-blockingmode="auto" type="text/javascript"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Catalunya | Ruta a Ruta - Viatges de Muntanya | Aventures Personalitzades</title>
@@ -13,7 +15,14 @@
     <meta property="og:image" content="https://rutaaruta.com/assets/viatges/catalunya/imatges/catalunya1.webp">
     <meta property="og:url" content="https://rutaaruta.com/assets/viatges/catalunya/catalunya.html">
     <meta property="og:type" content="article">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </noscript>
     <link rel="stylesheet" href="../../../css/style.css">
     <script src="../../../js/main.js" defer></script>
 </head>
@@ -22,10 +31,13 @@
     <div id="header-placeholder"></div>
 
     <main>
-        <section class="hero"
-            style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('imatges/catalunya1.webp'); height: 60vh;">
-            <h1>Catalunya: Diversitat Infinita</h1>
-            <p>Dels cims dels Pirineus a les cales de la Costa Brava.</p>
+        <section class="hero" style="height: 60vh;">
+            <img src="imatges/catalunya1.webp" alt="Cims nevats dels Pirineus de Catalunya" class="hero-img"
+                fetchpriority="high" width="1600" height="900">
+            <div class="hero-content">
+                <h1>Catalunya: Diversitat Infinita</h1>
+                <p>Dels cims dels Pirineus a les cales de la Costa Brava.</p>
+            </div>
         </section>
 
         <section style="padding: 2rem 10% 5rem; line-height: 1.8;">
@@ -66,15 +78,18 @@
                     <button class="carousel-btn prev" aria-label="Anterior"><i class="fas fa-arrow-left"></i></button>
                     <div class="carousel-container">
                         <div class="carousel-item"><img src="imatges/catalunya1.webp"
-                                alt="Vistes del Parc Nacional d'Aigüestortes, Pirineus"></div>
+                                alt="Vistes del Parc Nacional d'Aigüestortes, Pirineus" loading="lazy" width="800"
+                                height="450"></div>
                         <div class="carousel-item"><img src="imatges/catalunya2.webp"
-                                alt="Camins de ronda a la Costa Brava"></div>
+                                alt="Camins de ronda a la Costa Brava" loading="lazy" width="800" height="450"></div>
                         <div class="carousel-item"><img src="imatges/catalunya3.webp"
-                                alt="Senderisme per la zona volcànica de la Garrotxa"></div>
+                                alt="Senderisme per la zona volcànica de la Garrotxa" loading="lazy" width="800"
+                                height="450"></div>
                         <div class="carousel-item"><img src="imatges/catalunya4.webp"
-                                alt="Muntanyes de Montserrat, Catalunya"></div>
+                                alt="Muntanyes de Montserrat, Catalunya" loading="lazy" width="800" height="450"></div>
                         <div class="carousel-item"><img src="imatges/catalunya5.webp"
-                                alt="Paisatge d'alta muntanya als Pirineus catalans"></div>
+                                alt="Paisatge d'alta muntanya als Pirineus catalans" loading="lazy" width="800"
+                                height="450"></div>
                     </div>
                     <button class="carousel-btn next" aria-label="Següent"><i class="fas fa-arrow-right"></i></button>
                 </div>
