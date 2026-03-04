@@ -906,7 +906,12 @@ footer {
     max-width: 740px;
     margin: 4rem auto;
     padding: 0 5%;
-    line-height: 1.8;
+    line-height: 1.9;
+    /* Una mica més d'aire */
+    text-align: justify;
+    /* Justificació global al contenidor */
+    hyphens: auto;
+    /* Evita forats blancs grans en català */
 }
 
 .hero.blog-hero {
@@ -926,8 +931,9 @@ footer {
     margin-bottom: 2.5rem;
 }
 
-article p {
-    margin-bottom: 1.5rem;
+article p,
+.blog-post-container p {
+    margin-bottom: 1.6rem;
     text-align: justify;
 }
 
