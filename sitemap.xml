@@ -2,62 +2,108 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://rutaaruta.com/</loc>
-    <lastmod>2026-02-02</lastmod>
+    <lastmod>2026-02-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://rutaaruta.com/destins.html</loc>
-    <lastmod>2026-02-02</lastmod>
+    <loc>https://rutaaruta.com/destins</loc>
+    <lastmod>2026-02-19</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://rutaaruta.com/blog</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rutaaruta.com/blog.html</loc>
-    <lastmod>2026-02-02</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://rutaaruta.com/contacte</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>yearly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://rutaaruta.com/contacte.html</loc>
-    <lastmod>2026-02-02</lastmod>
+    <loc>https://rutaaruta.com/politica-cookies</loc>
+    <lastmod>2026-02-19</lastmod>
     <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.3</priority>
   </url>
+  
+  <!-- Trip Pages -->
   <url>
-    <loc>https://rutaaruta.com/blog/guia-preparacio-muntanya.html</loc>
-    <lastmod>2026-02-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://rutaaruta.com/assets/viatges/romania/romania.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <loc>https://rutaaruta.com/romania</loc>
+    <lastmod>2026-02-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rutaaruta.com/assets/viatges/dolomites/dolomites.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <loc>https://rutaaruta.com/dolomites</loc>
+    <lastmod>2026-02-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rutaaruta.com/assets/viatges/eslovaquia/eslovaquia.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <loc>https://rutaaruta.com/eslovaquia</loc>
+    <lastmod>2026-02-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rutaaruta.com/assets/viatges/paisbasc/paisbasc.html</loc>
-    <lastmod>2026-02-04</lastmod>
+    <loc>https://rutaaruta.com/rutavicentina</loc>
+    <lastmod>2026-02-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://rutaaruta.com/blog/millors-rutes-dolomites.html</loc>
+    <loc>https://rutaaruta.com/marroc</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rutaaruta.com/nepal</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rutaaruta.com/oscos</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rutaaruta.com/catalunya</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://rutaaruta.com/paisbasc</loc>
+    <lastmod>2026-02-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog Posts -->
+  <url>
+    <loc>https://rutaaruta.com/blog/millors-rutes-dolomites</loc>
     <lastmod>2026-02-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rutaaruta.com/blog/trekkings-carpats-romania</loc>
+    <lastmod>2026-03-04</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://rutaaruta.com/blog/guia-preparacio-muntanya</loc>
+    <lastmod>2026-02-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

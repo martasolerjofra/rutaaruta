@@ -19,8 +19,8 @@ async function loadComponent(elementId, filePath) {
         tempDiv.innerHTML = content;
 
         // Determinem si estem a la home o a una subpàgina
-        const isHomePage = window.location.pathname.endsWith('index.html') ||
-            window.location.pathname.endsWith('/') ||
+        const isHomePage = window.location.pathname === '/' || 
+            window.location.pathname.endsWith('index.html') ||
             window.location.pathname === '' ||
             window.location.pathname.split('/').pop() === '';
 
@@ -37,12 +37,14 @@ async function loadComponent(elementId, filePath) {
             const href = a.getAttribute('href');
             if (href) {
                 if (href.startsWith('#')) {
-                    // Si som en subpàgina, els enllaços d'àncora han d'anar a la home
+                    // Si som en subpàgina, els enllaços d'àncora han d'anar a la home (/)
                     if (!isHomePage) {
-                        a.href = basePath + 'index.html' + href;
+                        a.href = basePath + (href.startsWith('#') ? href : href);
+                        // Si l'enllaç és només una àncora, apuntem a la arrel + àncora
+                        a.href = basePath + href;
                     }
                 } else if (!href.startsWith('http') && !href.startsWith('/') && !href.startsWith('mailto:') && !href.startsWith('tel:')) {
-                    // Rutes relatives (ex: 'Assets/...')
+                    // Rutes relatives
                     a.href = basePath + href;
                 }
             }
