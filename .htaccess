@@ -1,0 +1,36 @@
+RewriteEngine On
+
+# 0. Redirigir index.html a la arrel /
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTP/
+RewriteRule ^index\.html$ / [R=301,L]
+
+# 1. Redirigir rutes antigues de destins a les noves URLs netes
+RewriteRule ^assets/viatges/romania/romania\.html$ /romania [R=301,L]
+RewriteRule ^assets/viatges/dolomites/dolomites\.html$ /dolomites [R=301,L]
+RewriteRule ^assets/viatges/eslovaquia/eslovaquia\.html$ /eslovaquia [R=301,L]
+RewriteRule ^assets/viatges/ruta\ vicentina/rutavicentina\.html$ /rutavicentina [R=301,L]
+RewriteRule ^assets/viatges/marroc/marroc\.html$ /marroc [R=301,L]
+RewriteRule ^assets/viatges/nepal/nepal\.html$ /nepal [R=301,L]
+RewriteRule ^assets/viatges/oscos/oscos\.html$ /oscos [R=301,L]
+RewriteRule ^assets/viatges/catalunya/catalunya\.html$ /catalunya [R=301,L]
+RewriteRule ^assets/viatges/paisbasc/paisbasc\.html$ /paisbasc [R=301,L]
+
+# 2. Redirigir de qualsevol .html a la versió neta (SEO) per a fitxers a l'arrel o blog
+RewriteCond %{THE_REQUEST} /([^/.]+)\.html [NC]
+RewriteRule ^ /%1 [L,R=301]
+
+# 3. Mapatge intern: de les URLs netes als fitxers reals
+RewriteRule ^romania$ assets/viatges/romania/romania.html [L]
+RewriteRule ^dolomites$ assets/viatges/dolomites/dolomites.html [L]
+RewriteRule ^eslovaquia$ assets/viatges/eslovaquia/eslovaquia.html [L]
+RewriteRule ^rutavicentina$ "assets/viatges/ruta vicentina/rutavicentina.html" [L]
+RewriteRule ^marroc$ assets/viatges/marroc/marroc.html [L]
+RewriteRule ^nepal$ assets/viatges/nepal/nepal.html [L]
+RewriteRule ^oscos$ assets/viatges/oscos/oscos.html [L]
+RewriteRule ^catalunya$ assets/viatges/catalunya/catalunya.html [L]
+RewriteRule ^paisbasc$ assets/viatges/paisbasc/paisbasc.html [L]
+
+# 4. Permetre carregar els fitxers .html internament quan no hi ha extensió (index, destins, blog, blog/post, etc.)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^(.*)$ $1.html [L]
