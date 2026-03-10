@@ -115,6 +115,7 @@
                             <label for="service">Destí o Servei Requerit</label>
                             <select id="service" name="service">
                                 <option value="personalitzat">Viatge 100% Personalitzat</option>
+                                <option value="empreses">Team Building / Empreses</option>
                                 <option value="romania">Romania</option>
                                 <option value="dolomites">Dolomites</option>
                                 <option value="eslovaquia">Eslovàquia</option>
@@ -279,6 +280,18 @@
     </main>
 
     <div id="footer-placeholder"></div>
+
+    <script>
+        // Pre-seleccionar el servei si ve per URL
+        window.addEventListener('load', () => {
+            const params = new URLSearchParams(window.location.search);
+            const servei = params.get('servei');
+            if (servei) {
+                const select = document.getElementById('service');
+                if (select) { select.value = servei; }
+            }
+        });
+    </script>
 </body>
 
 </html>
