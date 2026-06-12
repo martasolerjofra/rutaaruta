@@ -1,0 +1,80 @@
+<USER_REQUEST>
+ara creeem uan nova àgina, qeu tambe nomes s'ha de posar al footer: POLÍTICA DE PRIVACITAT I PROTECCIÓ DE DADES PERSONALS<
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-06-12T10:27:32+02:00.
+
+The user's current state is as follows:
+Active Document: /Users/martasoler/Desktop/Web/avis-legal.html (LANGUAGE_HTML)
+Cursor is on line: 28
+Other open documents:
+- /Users/martasoler/Desktop/Web/parse_bonviure.py (LANGUAGE_PYTHON)
+- /Users/martasoler/Desktop/Web/components/footer.html (LANGUAGE_HTML)
+- /Users/martasoler/Desktop/Web/avis-legal.html (LANGUAGE_HTML)
+- /Users/martasoler/Desktop/Web/condicions-generals.html (LANGUAGE_HTML)
+- /Users/martasoler/Desktop/Web/bonviure_raw.html (LANGUAGE_HTML)
+</ADDITIONAL_METADATA>
+<USER_REQUEST>
+POLÍTICA DE PRIVACITAT I PROTECCIÓ DE DADES PERSONALS
+IMPORTANT: Us convidem a llegir detingudament aquesta Declaració de Privacitat per conèixer per què recollim les vostres dades personals i com són processades per Ruta a Ruta Viatges de muntanya, amb domicili fiscal a l'Avinguda d'Alp, nº 19, 17537 Alp (Girona). Aquesta política està subjecta a canvis, per la qual cosa és convenient consultar-la cada vegada que visiteu el nostre lloc web.
+
+1. ÀMBIT D'APLICACIÓ
+Aquesta declaració de privacitat en línia és pública i accessible a tots els usuaris i clients, i s'aplica al lloc web principal https://rutaaruta.com/, així com a tots els formularis, contractes o correus electrònics emesos per l'Agència que enllacin a aquesta política.
+
+2. RESPONSABLE DEL TRACTAMENT
+Nom comercial: Ruta a Ruta Viatges de muntanya
+
+Titular (Responsable): [Posa aquí el teu Nom i Cognoms]
+
+NIF/DNI: [Posa aquí el teu DNI/NIF]
+
+Domicili: Avinguda d'Alp, nº 19, 17537 Alp (Girona)
+
+Correu electrònic: rutaarutaviatges@gmail.com
+
+Sus dades personals són tractades amb la màxima confidencialitat, havent adoptat les mesures d'ordre tècnic i organitzatiu necessàries per garantir la seguretat de les dades, evitant-ne l'alteració, pèrdua, tractament o accés no autoritzat d'acord amb el RGPD (UE) 2016/679 i la LOPDGDD 3/2018.
+
+3. PER QUÈ RECOLLIM LES VOSTRES DADES (FINALITATS)
+Perquè pugueu rebre informació, sol·licitar propostes a mida o reservar els nostres viatges de muntanya, és necessari que ens faciliteu certes dades personals. Recollim aquesta informació per a:
+
+Atendre sol·licituds d'informació i consultes.
+
+Elaboració de pressupostos personalitzats i disseny d'itineraris (es conservaran durant un màxim de 2 anys; si no es contracta el viatge, esborrarem les dades).
+
+Realització, gestió i facturació del servei i viatge contractat (obligatori per a l'execució del contracte). Els documents fiscals es guardaran durant 5 anys més l'any en curs per obligació legal.
+
+Enviament de missatges
+<truncated 2542 bytes>
+ent, portabilitat i oposició.
+
+Per fer-ho, podeu enviar una sol·licitud escrita, adjuntant una còpia del vostre document d'identitat (DNI/NIE) per verificar que sou el titular, a:
+
+Correu electrònic: rutaarutaviatges@gmail.com
+
+Adreça postal: Avinguda d'Alp, nº 19, 17537 Alp (Girona)
+
+Si considereu que no hem atès correctament els vostres drets o que fem un ús indegut de les dades, teniu dret a presentar una reclamació davant l'Agència Espanyola de Protecció de Dades (AEPD) a través de la seva seu electrònica a www.aepd.es.
+
+📌 Comprovació final:
+Recorda omplir el teu Nom i Cognoms i DNI al punt 2.
+
+Un cop creis aquesta pàgina a la teva web, ves al formulari de contacte de la teva captura de pantalla (la que hem vist a image_121d19.png) i enllaça el text "política de privacitat" directament a l'adreça d'aquesta nova pàgina (ex: [https://rutaaruta.com/politica-de-privacitat/](https://rutaaruta.com/politica-de-privacitat/)).
+
+Amb l'Avís Legal, les Condicions de Contractació i aquesta Política de Privacitat, la teva web ja té el pack de legalitat complet per començar a facturar!
+</USER_REQUEST>
+<ADDITIONAL_METADATA>
+The current local time is: 2026-06-12T10:30:46+02:00.
+
+The user's current state is as follows:
+Active Document: /Users/martasoler/Desktop/Web/avis-legal.html (LANGUAGE_HTML)
+Cursor is on line: 28
+Other open documents:
+- /Users/martasoler/Desktop/Web/avis-legal.html (LANGUAGE_HTML)
+- /Users/martasoler/Desktop/Web/condicions-generals.html (LANGUAGE_HTML)
+- /Users/martasoler/Desktop/Web/bonviure_raw.html (LANGUAGE_HTML)
+- /Users/martasoler/Desktop/Web/parse_bonviure.py (LANGUAGE_PYTHON)
+- /Users/martasoler/Desktop/Web/components/footer.html (LANGUAGE_HTML)
+</ADDITIONAL_METADATA>
+<USER_SETTINGS_CHANGE>
+The user changed setting `Model Selection` from Gemini 3.5 Flash (Medium) to Gemini 3.1 Pro (Low). No need to comment on this change if the user doesn't ask about it. If reporting what model you are, please use a human readable name instead of the exact string.
+</USER_SETTINGS_CHANGE>
